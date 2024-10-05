@@ -1,0 +1,38 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+.blogPosts {
+display: flex;
+justify-content: space-between; /* Para espaciar los componentes */
+gap: 20px; /* Espaciado entre los componentes */
+margin-top: 40px;
+}
+
+.post {
+width: 30%; /* Cada componente ocupa el 30% del ancho */
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #c2efd4;
+border-radius: 8px;
+padding: 20px;
+flex-direction: column; /* Imagen y el texto en una columna (vertical) */
+align-items: center; /* Centra la imagen y el texto horizontalmente */
+justify-content: center; /* Centra el contenido verticalmente */
+}
+
+.image {
+width: 100%;
+height: auto;
+border-radius: 8px;
+}
+
+.titulo {
+margin-top: 10px;
+color: #224f34;
+font-size: 18px;
+text-align: center;
+}
+  

@@ -1,0 +1,53 @@
+
+.home {
+    background-color: #c2efd4; /* Color de fondo del home */
+    padding: 20px; /* Espacio alrededor del contenido */
+  }
+  
+.section {
+  display: flex; /* Usar flexbox para organizar el texto y la imagen */
+  align-items: center; /* Centra verticalmente el contenido */
+  max-width: 1200px; /* Limitar el ancho del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+  padding: 20px; /* Espacio interno */
+  background-color: #c2efd4; /* Fondo blanco para resaltar el texto y la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.text {
+  flex: 1; /* Permite que el texto ocupe espacio */
+  margin-right: 20px; /* Espacio entre el texto y la imagen */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color:#224f34
+}
+
+.text p {
+  font-size: 16px; /* Cambia el tamaño de la fuente del párrafo */
+  line-height: 1.5; /* Espacio entre líneas del párrafo */
+  margin: 10px 0; /* Espaciado arriba y abajo del párrafo */
+  font-family: 'Lucida Sans';
+}
+
+.image {
+  flex: 1; /* Permite que la imagen ocupe espacio */
+}
+
+.image img {
+  max-width: 100%; /* Hace que la imagen no exceda el ancho del contenedor */
+  border-radius: 8px; /* Bordes redondeados en la imagen */
+}
+
+.blogButton {
+  background-color: #224f34; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.blogButton:hover {
+  opacity: 0.8; /* Efecto hover */
+}
