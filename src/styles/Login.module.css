@@ -1,0 +1,65 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la pantalla */
+    background-color: #c2efd4; /* Fondo de pantalla */
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Contenedor del formulario */
+  .formContainer {
+    background-color: #FFEBAD; /* Color del componente del formulario */
+    padding: 40px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del formulario */
+    text-align: center; /* Centrar el contenido del formulario */
+    width: 300px; /* Ancho del formulario */
+    position: relative; /* Relativo para el posicionamiento absoluto del botón */
+  }
+  
+  /* Grupos de inputs (Usuario y Contraseña) */
+  .formGroup {
+    margin-bottom: 20px; /* Espacio entre campos */
+  }
+  
+  /* Estilos de las etiquetas */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Estilos para los inputs */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Botón de login */
+  .loginButton {
+    background-color: #224F34; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    /* Posicionamiento del botón fuera del formulario */
+    position: absolute;
+    bottom: 0; /* Ajuste para que quede debajo del formulario */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .loginButton:hover {
+    opacity: 0.9; /* Ligeramente más oscuro en hover */
+  }
+  

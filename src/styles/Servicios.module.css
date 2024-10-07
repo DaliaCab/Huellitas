@@ -1,0 +1,37 @@
+.servicios {
+    background-color: #c2efd4; /* Color de fondo */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .serviciosList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espacio entre los servicios */
+    margin-top: 30px;
+  }
+  
+  .servicioCard {
+    background-color: #FFEBCD; /* Fondo del card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .servicioCard img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .servicioCard h2 {
+    margin-top: 15px;
+    color: #224f34; /* Color del texto */
+  }
+  
+  .servicioCard p {
+    margin: 10px 0;
+  }
+  

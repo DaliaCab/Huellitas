@@ -24,7 +24,7 @@ const Carousel = () => {
     {
       img: imagen3,
       text: "Atención personalizada para cada una de tus mascotas.",
-      buttonText: <Link to="/acerca" className={styles.linkButton}>Contáctanos</Link>,
+      buttonText: <Link to="/acerca" className={styles.linkButton}>Conócenos</Link>,
     },
     {
       img: imagen4,
