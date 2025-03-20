@@ -1,0 +1,60 @@
+.citasContainer {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.botonNuevaCita {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.botonNuevaCita:hover {
+    background-color: #45a049;
+}
+
+.tablaCitas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: white;
+}
+
+.tablaCitas th,
+.tablaCitas td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.tablaCitas th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.tablaCitas tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.tablaCitas tr:hover {
+    background-color: #e9ecef;
+}
+.botonEliminar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botonEliminar:hover {
+    background-color: #c0392b;
+}

@@ -48,18 +48,36 @@
     color: white; /* Color del texto del botón */
     border: none;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     
     /* Posicionamiento del botón fuera del formulario */
-    position: absolute;
-    bottom: 0; /* Ajuste para que quede debajo del formulario */
-    left: 50%;
-    transform: translateX(-50%);
+    position: left;
+    bottom: 2%; /* Ajuste para que quede debajo del formulario */
+    transform: translateX(5%); 
   }
   
   .loginButton:hover {
+    opacity: 0.9; /* Ligeramente más oscuro en hover */
+  }
+
+  .nuevoUsuarioButton {
+    background-color: #224F34; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    /* Posicionamiento del botón fuera del formulario */
+    position: right;
+    bottom: 2%; /* Ajuste para que quede debajo del formulario */
+    right: 50%;
+    transform: translateX(10%);
+  }
+  .nuevoUsuarioButton:hover {
     opacity: 0.9; /* Ligeramente más oscuro en hover */
   }
   

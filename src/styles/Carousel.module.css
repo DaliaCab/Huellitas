@@ -21,7 +21,7 @@
   width: 50%; /* La imagen ocupa la mitad del ancho */
   height: 100%; /* Altura completa del contenedor */
   object-fit: contain; /* Ajustar la imagen, recortando si es necesario */
-  background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  background: rgba(42, 82, 60, 0.7); /* Fondo semi-transparente */
 }
 
 .texto {
@@ -34,7 +34,7 @@
   padding: 20px; /* Espaciado interno */
   padding-right: 10%;
   color: white; /* Color del texto */
-  background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  background: rgba(42, 82, 60, 0.7); /* Fondo semi-transparente */
   text-align: center; /* Centrar el texto */
   font-size: 1.3rem; /* Tamaño de fuente grande */
   padding-bottom: 5%;

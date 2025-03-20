@@ -1,0 +1,155 @@
+/* Estilos para el contenedor principal */
+.perfilContainer {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+.perfilContainer h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para la sección de información del empleado */
+.perfilInfo {
+    text-align: left;
+    font-size: 1.1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.perfilInfo p {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.perfilInfo p:last-child {
+    border-bottom: none;
+}
+
+/* Estilos para los botones de acción */
+.botonesPerfil {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.botonAccion {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.botonAccion:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el formulario de cambio de contraseña */
+.passwordForm {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.passwordForm input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.passwordForm button {
+    align-self: flex-start;
+    padding: 0.8rem 1.5rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.passwordForm button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para mensajes de error */
+.error {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Estilos para el mensaje de carga */
+.loading {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+/* Botón de peligro */
+.botonPeligro {
+    background-color: #dc3545 !important;
+}
+
+.botonPeligro:hover {
+    background-color: #bb2d3b !important;
+}
+
+/* Ajustar disposición de botones */
+.botonesPerfil {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.botonSecundario {
+    background-color: #6c757d !important;
+}
+
+.botonSecundario:hover {
+    background-color: #5a6268 !important;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .botonesPerfil {
+        gap: 0.5rem;
+    }
+    
+    .botonAccion {
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .botonesPerfil {
+        gap: 0.8rem;
+    }
+    
+    .botonAccion {
+        width: 100%;
+        order: 3; /* Ordenar el botón de eliminar al final */
+    }
+    
+    .botonPeligro {
+        order: 4;
+    }
+}

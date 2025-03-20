@@ -6,27 +6,33 @@ const AcercaDeNosotros = () => {
   return (
     <div className={styles.acercaDeNosotros}>
       <h1>Acerca de Nosotros</h1>
-      <img src={logo} alt="Logo Huellitas" className={styles.logo} /> {/* Agregar el logo */}
+      <img src={logo} alt="Logo Huellitas" className={styles.logo} />
       <p>
-        En <strong>Huellitas</strong>, nos dedicamos a brindar el mejor cuidado a tus mascotas. Nuestro equipo de
-        veterinarios y especialistas está comprometido con la salud y el bienestar de los animales, ofreciendo servicios
-        veterinarios de alta calidad y atención personalizada para cada uno de nuestros pacientes.
+        <strong>Huellitas</strong> es una plataforma diseñada para transformar la gestión de clínicas veterinarias, 
+        simplificando y agilizando sus procesos internos. Nuestro sistema ayuda a optimizar las operaciones, permitiendo a las 
+        clínicas gestionar de manera eficiente el historial clínico de cada paciente, agendar citas, actualizar historias clínicas, 
+        gestionar exámenes de laboratorio, generar notificaciones, facturas y mucho más.
+      </p>
+      <p>
+        Con <strong>Huellitas</strong>, los dueños de mascotas también pueden revisar los historiales médicos de sus mascotas y recibir 
+        recordatorios sobre citas y vacunas. Este sistema innovador no solo facilita la administración de las clínicas veterinarias, 
+        sino que también mejora la experiencia del cliente al permitir una interacción rápida y cómoda.
       </p>
 
       <div className={styles.misionVision}>
         <div className={styles.card}>
           <h2>Nuestra Misión</h2>
           <p>
-            Proveer atención médica veterinaria de excelencia, con un enfoque en la prevención y el cuidado integral
-            de las mascotas, promoviendo su bienestar y felicidad.
+            Simplificar y modernizar la gestión de clínicas veterinarias, proporcionando una plataforma tecnológica que optimice 
+            sus operaciones y mejore la atención al cliente.
           </p>
         </div>
 
         <div className={styles.card}>
           <h2>Nuestra Visión</h2>
           <p>
-            Ser el centro veterinario líder en la región, reconocido por nuestra pasión, dedicación y compromiso
-            hacia la salud animal, utilizando tecnología avanzada y un equipo humano altamente capacitado.
+            Convertirnos en el sistema de gestión veterinaria líder en la industria, reconocido por nuestra innovación, 
+            confiabilidad y capacidad de adaptarnos a las necesidades de las clínicas y sus pacientes.
           </p>
         </div>
       </div>
@@ -34,11 +40,11 @@ const AcercaDeNosotros = () => {
       <div className={styles.valores}>
         <h2>Nuestros Valores</h2>
         <ul>
-          <li><strong>Compromiso:</strong> Estamos comprometidos con la salud y bienestar de las mascotas.</li>
-          <li><strong>Amor por los animales:</strong> Tratamos a cada mascota como si fuera parte de nuestra familia.</li>
-          <li><strong>Profesionalismo:</strong> Contamos con un equipo altamente calificado y en constante capacitación.</li>
-          <li><strong>Innovación:</strong> Utilizamos las mejores herramientas y técnicas para brindar un cuidado de calidad.</li>
-          <li><strong>Confianza:</strong> Construimos relaciones duraderas con nuestros clientes basadas en la confianza y transparencia.</li>
+          <li><strong>Innovación:</strong> Incorporamos tecnología avanzada para mejorar los servicios veterinarios.</li>
+          <li><strong>Confiabilidad:</strong> Ofrecemos una plataforma segura y estable para la gestión clínica.</li>
+          <li><strong>Compromiso:</strong> Estamos comprometidos con el éxito y la eficiencia de cada clínica que utiliza nuestra plataforma.</li>
+          <li><strong>Facilidad de uso:</strong> Nuestro sistema es intuitivo y fácil de usar, tanto para las clínicas como para los dueños de mascotas.</li>
+          <li><strong>Calidad:</strong> Trabajamos para ofrecer un sistema de alta calidad que simplifique el día a día en la clínica.</li>
         </ul>
       </div>
     </div>
@@ -46,4 +52,3 @@ const AcercaDeNosotros = () => {
 };
 
 export default AcercaDeNosotros;
-

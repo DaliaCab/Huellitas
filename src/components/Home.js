@@ -7,17 +7,21 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div className={styles.home}>
-
       <Carousel />
 
       <div className={styles.section}>
         <div className={styles.text}>
-        <h2>¡Garantizamos a tu mascota los mejores cuidados!</h2> 
-          <p>Lee sobre testimonios que han traido a sus mascotas con nuestros profesionales, también sobre sus cuidados y recomendaciones para tu mascota</p>
-          <Link to="/blog"><button className={styles.blogButton}>EXPLORAR BLOG </button ></Link>
+          <h2>¡Garantizamos a tu mascota los mejores cuidados!</h2>
+          <p>
+            Descubre historias inspiradoras de dueños que han confiado en nosotros para el cuidado de sus mascotas. 
+            También encontrarás consejos útiles y recomendaciones para asegurar el bienestar de tu compañero fiel.
+          </p>
+          <Link to="/blog">
+            <button className={styles.blogButton}>EXPLORAR EL BLOG</button>
+          </Link>
         </div>
         <div className={styles.image}>
-          <img src={image} alt="Imagen" />
+          <img src={image} alt="Veterinaria" />
         </div>
       </div>
     </div>
@@ -25,3 +29,4 @@ const Home = () => {
 };
 
 export default Home;
+

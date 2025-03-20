@@ -2,30 +2,30 @@ import React from 'react';
 import styles from '../styles/PreguntasFrecuentes.module.css';
 
 const PreguntasFrecuentes = () => {
-  const faqs = [
+  const faqs = [  // Array de objetos con preguntas y respuestas
     {
-      pregunta: '¿Cuáles son los horarios de atención?',
-      respuesta: 'Nuestro centro veterinario está abierto de lunes a viernes de 8:00 a.m. a 6:00 p.m., y los sábados de 9:00 a.m. a 2:00 p.m.',
+      pregunta: '¿Qué es Huellitas?',
+      respuesta: 'Huellitas es una aplicación web diseñada para ayudar a las clínicas veterinarias a gestionar sus operaciones de manera más eficiente, desde el registro de pacientes hasta la generación de notificaciones y facturas.',
     },
     {
-      pregunta: '¿Ofrecen servicio de emergencias?',
-      respuesta: 'Sí, contamos con atención de emergencias las 24 horas. Puedes contactarnos al número de emergencia en cualquier momento.',
+      pregunta: '¿Cómo puedo implementar Huellitas en mi clínica?',
+      respuesta: 'Puedes comenzar contactándonos a través de nuestro sitio web para obtener información sobre la implementación y capacitación en el uso de nuestra plataforma.',
     },
     {
-      pregunta: '¿Cómo puedo agendar una cita?',
-      respuesta: 'Puedes agendar una cita llamando a nuestra línea directa o a través de nuestro sitio web, en la sección de "Agendar Cita".',
+      pregunta: '¿Qué funcionalidades ofrece Huellitas?',
+      respuesta: 'Nuestra plataforma incluye registro y gestión de pacientes, agendamiento de citas, actualización de historias clínicas, gestión de exámenes de laboratorio y generación de recordatorios para dueños de mascotas.',
     },
     {
-      pregunta: '¿Qué vacunas necesitan mis mascotas?',
-      respuesta: 'Depende de la especie y la edad de tu mascota. Recomendamos que agendes una consulta con nuestros veterinarios para un plan de vacunación personalizado.',
+      pregunta: '¿Es Huellitas fácil de usar?',
+      respuesta: 'Sí, Huellitas ha sido diseñada con una interfaz intuitiva que permite a los usuarios navegar y gestionar sus tareas fácilmente. También ofrecemos soporte técnico para cualquier duda que puedas tener.',
     },
     {
-      pregunta: '¿Qué debo llevar a la primera consulta de mi mascota?',
-      respuesta: 'Es importante traer cualquier historial médico previo, las vacunas que ha recibido y cualquier otra información relevante sobre su salud.',
+      pregunta: '¿Ofrecen capacitación para el uso de la plataforma?',
+      respuesta: 'Sí, brindamos sesiones de capacitación para el personal de las clínicas que utilizan Huellitas, asegurando que todos estén familiarizados con el sistema y puedan aprovechar al máximo sus funcionalidades.',
     },
     {
-      pregunta: '¿Ofrecen planes de salud para mascotas?',
-      respuesta: 'Sí, ofrecemos diferentes planes de salud que incluyen consultas regulares, vacunación y descuentos en otros servicios. Contáctanos para más detalles.',
+      pregunta: '¿Qué debo hacer si tengo problemas técnicos?',
+      respuesta: 'Si encuentras algún problema técnico, puedes contactarnos a través de nuestro soporte en línea o por teléfono, y nuestro equipo estará encantado de ayudarte.',
     },
   ];
 
@@ -33,8 +33,8 @@ const PreguntasFrecuentes = () => {
     <div className={styles.faq}>
       <h1>Preguntas Frecuentes</h1>
       <div className={styles.faqList}>
-        {faqs.map((faq, index) => (
-          <div key={index} className={styles.faqItem}>
+        {faqs.map((faq, index) => (  // Mapeo del array de objetos
+          <div key={index} className={styles.faqItem}>  
             <h3>{faq.pregunta}</h3>
             <p>{faq.respuesta}</p>
           </div>
