@@ -58,3 +58,28 @@
 .botonEliminar:hover {
     background-color: #c0392b;
 }
+
+/* Botón de regreso al Dashboard */
+.botonDashboard {
+    background-color: #ec8a50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .botonDashboard:hover {
+    background-color: #5a6268;
+  }
+  
+
+  .botonDashboard::before {
+    content: '←';
+    font-size: 1.2rem;
+  }

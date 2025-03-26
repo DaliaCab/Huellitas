@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from '../styles/Pacientes.module.css';
+import { FaSearch } from "react-icons/fa";
+import { RiHealthBookFill } from "react-icons/ri";
 
 const Pacientes = () => {
+  const navigate = useNavigate();
   const [pacientes, setPacientes] = useState([]);
   const [nuevoPaciente, setNuevoPaciente] = useState({
     nombre: '',
@@ -95,7 +99,7 @@ const Pacientes = () => {
       
       if (response.ok) {
         const updatedData = await response.json(); // Obtener datos actualizados del servidor
-        setPacientes(pacientes.map(p => p.id === id ? updatedData : p));
+        setPacientes(pacientes.map(p => p.idpaciente === id ? updatedData : p));
         setPacienteEditar(null);
         alert('Datos actualizados correctamente!');
       } else {
@@ -110,7 +114,13 @@ const Pacientes = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Gestión de Pacientes</h1>
+      <button 
+        className={styles.botonDashboard}
+        onClick={() => navigate('/dashboard-empleado')}
+      >
+         Volver al Dashboard
+      </button>
+      <h1> <RiHealthBookFill />  Gestión de Pacientes</h1>
       
       {/* Filtro por ID */}
       <div className={styles.filtroContainer}>
@@ -118,9 +128,12 @@ const Pacientes = () => {
           type="number"
           placeholder="Buscar por ID"
           value={filtroId}
-          onChange={(e) => setFiltroId(e.target.value)}
+          onChange={(e) => {
+            setFiltroId(e.target.value);
+            if (e.target.value === "") setPacienteFiltrado(null);
+          }}
         />
-        <button onClick={buscarPorId}>Buscar</button>
+        <button onClick={buscarPorId}><FaSearch />  Buscar</button>
       </div>
 
       {/* Botón para nuevo paciente */}
@@ -254,7 +267,7 @@ const Pacientes = () => {
         </div>
       )}
 
-      {/* Listado de pacientes */}
+      {/* Cartas de pacientes */}
       <div className={styles.listaPacientes}>
         {(pacienteFiltrado ? [pacienteFiltrado] : pacientes)
           .filter(paciente => paciente && paciente.nombre) // Filtra pacientes nulos o sin nombre
@@ -307,12 +320,12 @@ const Pacientes = () => {
           ))}
       </div>
 
-      {/* Modal de edición */}
+      {/* Formulario edición*/}
       {pacienteEditar && (
         <div className={styles.modal}>
           <div className={styles.formContainer}>
             <h2>Editar Paciente</h2>
-            <form onSubmit={(e) => actualizarPaciente(e, pacienteEditar.id)}>
+            <form onSubmit={(e) => actualizarPaciente(e, pacienteEditar.idpaciente)}>
              
             
               <div className={styles.formGroup}>

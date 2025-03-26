@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '../styles/Citas.module.css';
+import { MdDelete } from "react-icons/md";
+import { FaCalendarPlus } from "react-icons/fa";
 
 const GestionCitas = () => {
   const [citas, setCitas] = useState([]);  //estado para GUARDAR la lista de citas
@@ -40,12 +42,18 @@ const GestionCitas = () => {
 
   return (
     <div className={styles.citasContainer}>
+      <button 
+        className={styles.botonDashboard}
+        onClick={() => navigate('/dashboard-empleado')}
+      >
+         Volver al Dashboard
+      </button>
       <h1>Agenda de Citas</h1>
       <button 
         onClick={() => navigate("/nueva-cita")}
         className={styles.botonNuevaCita}
       >
-        Agendar Nueva Cita
+       <FaCalendarPlus /> Agendar Nueva Cita
       </button>
       
       <table className={styles.tablaCitas}>
@@ -75,7 +83,7 @@ const GestionCitas = () => {
                   className={styles.botonEliminar}
                   onClick={() => eliminarCita(cita.id)}
                 >
-                  ❌ Eliminar
+                  <MdDelete /> Eliminar
                 </button>
               </td>
           </tr>

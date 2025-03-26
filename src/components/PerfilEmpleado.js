@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom'; // Importa useNavigate
 import styles from '../styles/PerfilEmpleado.module.css';
+import { BiLogOut } from "react-icons/bi";
+import { CgProfile } from "react-icons/cg";
+import { MdDelete } from "react-icons/md";
+import { FaKey } from "react-icons/fa";
+import { SiFormspree } from "react-icons/si";
 
 const PerfilEmpleado = () => {
   const { id } = useParams(); // Captura el ID de la URL si lo pasamos en la ruta
@@ -100,7 +105,13 @@ const PerfilEmpleado = () => {
 
   return (
     <div className={styles.perfilContainer}>
-      <h1>Mi Perfil</h1>
+      <button 
+        className={styles.botonDashboard}
+        onClick={() => navigate('/dashboard-empleado')}
+      >
+         Volver al Dashboard
+      </button>
+      <h1><CgProfile />  Mi Perfil</h1>
       <div className={styles.perfilInfo}>
         <p><strong>Nombre:</strong> {empleado.nombre}</p>
         <p><strong>Apellido:</strong> {empleado.apellido}</p>
@@ -116,28 +127,30 @@ const PerfilEmpleado = () => {
             onClick={() => navigate("/actualizar-datos")} // Navega a la ruta /actualizar-datos
             className={styles.botonAccion}
           >
-            Actualizar Datos
+            <SiFormspree />  Actualizar Datos
           </button>
           
           <button 
             onClick={() => setShowPasswordForm(!showPasswordForm)}
             className={styles.botonAccion}
           >
-            Cambiar Contraseña
+            <FaKey />  Cambiar Contraseña
           </button>
           
           <button 
             onClick={handleLogout}
            className={`${styles.botonAccion} ${styles.botonSecundario}`}
           >
-            Cerrar Sesión
+            <BiLogOut />
+             Cerrar Sesión
           </button>
 
           <button 
             onClick={handleDeleteAccount}
             className={`${styles.botonAccion} ${styles.botonPeligro}`}
           >
-            Eliminar mi cuenta
+            <MdDelete />
+              Eliminar mi cuenta
           </button>
         </div>
 

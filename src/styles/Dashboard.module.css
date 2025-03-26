@@ -32,3 +32,21 @@
   height: auto; /* Mantiene la relación de aspecto */
   margin-bottom: 1rem; /* Espacio inferior para separar el logo del texto */
 }
+
+
+.botonSecundario {
+  background-color: #6c757d !important;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  margin: 2%;
+}
+
+.botonSecundario:hover {
+  background-color: #5a6268 !important;
+}

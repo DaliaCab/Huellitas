@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import styles from "../styles/PerfilCliente.module.css";
+import { BiLogOut } from "react-icons/bi";
+import { CgProfile } from "react-icons/cg";
+import { MdDelete } from "react-icons/md";
+import { FaKey } from "react-icons/fa";
+import { SiFormspree } from "react-icons/si";
 
 const PerfilCliente = () => {
   const { id } = useParams();
@@ -106,7 +111,7 @@ const PerfilCliente = () => {
 
   return (
     <div className={styles.perfilContainer}>
-      <h1>Mi perfil</h1>
+      <h1><CgProfile />  Mi perfil</h1>
       <div className={styles.perfilInfo}>
         <p><strong>Nombre:</strong> {cliente.nombre} {cliente.apellido}</p>
         <p><strong>Correo:</strong> {cliente.correo}</p>
@@ -119,28 +124,28 @@ const PerfilCliente = () => {
             onClick={() => navigate("/actualizar-datos")}
             className={styles.botonAccion}
           >
-            Actualizar Datos
+            <SiFormspree />  Actualizar Datos
           </button>
           
           <button 
             onClick={() => setShowPasswordForm(!showPasswordForm)}
             className={styles.botonAccion}
           >
-            Cambiar Contraseña
+            <FaKey />  Cambiar Contraseña
           </button>
           
           <button 
             onClick={handleLogout}
             className={`${styles.botonAccion} ${styles.botonSecundario}`}
           >
-            Cerrar Sesión
+            <BiLogOut />  Cerrar Sesión
           </button>
           
           <button 
             onClick={handleDeleteAccount}
             className={`${styles.botonAccion} ${styles.botonPeligro}`}
           >
-            Eliminar cuenta
+            <MdDelete />  Eliminar cuenta
           </button>
         </div>
 

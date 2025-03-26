@@ -3,6 +3,7 @@ Pacientes.module.css
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    margin-left: 1%;
   }
   
   .filtroContainer {
@@ -26,6 +27,7 @@ Pacientes.module.css
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 1rem;
+    margin-left: 1%;
   }
   
   .listaPacientes {
@@ -148,3 +150,28 @@ Pacientes.module.css
     color: #666;
     font-style: italic;
   }
+  /* Botón de regreso al Dashboard */
+.botonDashboard {
+  background-color: #ec8a50;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2%;
+  margin-left: 1%;
+}
+
+.botonDashboard:hover {
+  background-color: #5a6268;
+}
+
+.botonDashboard::before {
+  content: '←';
+  font-size: 1.2rem;
+}

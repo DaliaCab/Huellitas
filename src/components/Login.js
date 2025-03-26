@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '../styles/Login.module.css';
+import { GrLogin } from "react-icons/gr";
+import { GrUserNew } from "react-icons/gr";
 
 const Login = () => {
   const [id, setId] = useState('');
@@ -84,20 +86,22 @@ return (
             
             {error && <div className={styles.error}>{error}</div>}  
             
-            <button 
-              type="submit" 
-              className={styles.loginButton}
-              disabled={!id || !password} // Deshabilitar si no hay ID o contraseña
-            >
-              Ingresar
-            </button>
-            {/* Botón adicional para crear nuevo usuario */}
-           <button 
-              className={styles.nuevoUsuarioButton}
-              onClick={() => navigate("/nuevo-usuario")}
-            >
-             Crear Nuevo Usuario
-           </button>
+          
+            <div className={styles.buttonsContainer}>
+              <button 
+                type="submit" 
+                className={styles.loginButton}
+                disabled={!id || !password}
+              >
+                <GrLogin /> Ingresar
+              </button>
+              <button 
+                className={styles.nuevoUsuarioButton}
+                onClick={() => navigate("/nuevo-usuario")}
+              >
+                <GrUserNew /> Crear Nuevo Usuario
+              </button>
+            </div>
           </form>
 
         </div>
